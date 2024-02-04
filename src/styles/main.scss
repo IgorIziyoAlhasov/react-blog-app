@@ -15,6 +15,44 @@ body {
 
         .light {
             background-color: $light-bg-main-color;
+            color: $light-theme-font-color;
+
+            h1 {
+                border-color: $light-theme-border-color;
+            }
+
+            header.header {
+                border-color: $light-theme-border-color;
+
+                .header-nav-item {
+                    border-color: $dark-theme-border-color;
+                }
+            }
+
+            footer.footer {
+                border-color: $light-theme-border-color;
+            }
+        }
+
+        .dark {
+            background-color: $dark-bg-main-color;
+            color: $dark-theme-font-color;
+
+            h1 {
+                border-color: $dark-theme-border-color;
+            }
+
+            header.header {
+                border-color: $dark-theme-border-color;
+
+                .header-nav-item {
+                    border-color: $dark-theme-border-color;
+                }
+            }
+
+            footer.footer {
+                border-color: $dark-theme-border-color;
+            }
         }
 
         .app-container {
@@ -26,6 +64,10 @@ body {
             .main {
                 padding: 1rem;
                 flex: auto;
+
+                h1 {
+                    border-bottom: 1px solid;
+                }
             }
         }
     }
