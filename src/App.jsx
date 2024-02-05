@@ -1,11 +1,10 @@
 import React from 'react'
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import { Footer, NavigationPanel } from './components';
-import { Home, Login } from './pages';
+import { Home, Login, Post } from './pages';
 import './styles/main.scss';
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
-
 
 
 
@@ -19,6 +18,7 @@ const App = () => {
                 <Routes>
 
                     <Route path='/' element={<Home />} />
+                    <Route path='/post/:postId' element={<Post/>} />
                     <Route path='/login' element={<Login />} />
 
                 </Routes>
