@@ -1,6 +1,9 @@
 @import './_variables.scss';
 
 body {
+    * {
+        box-sizing: border-box;
+    }
 
     margin: 0;
     padding: 0;
@@ -64,9 +67,44 @@ body {
             .main {
                 padding: 1rem;
                 flex: auto;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
 
                 h1 {
                     border-bottom: 1px solid;
+                }
+
+                section.posts,
+                section.post-details {
+                    flex: 1 75%;
+                    padding: 1rem;
+
+                    .posts-list .post-item {
+                        .post-title {
+                            font-size: 1.5rem;
+
+                            a {
+                                text-decoration: none;
+                                color: $light-theme-border-color;
+
+                                &:visited {
+                                    color: darken($color: $light-theme-border-color, $amount: 20);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                aside.users,
+                aside.author {
+                    flex: 1 25%;
+                    padding: 1rem;
+
+                    .author-info {
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
                 }
             }
         }
