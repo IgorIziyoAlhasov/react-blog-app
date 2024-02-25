@@ -18,6 +18,8 @@ const App = () => {
                 <Routes>
 
                     <Route path='/' element={<Home />} />
+                    <Route path='/search/:query?' element={<Home />} />
+                    <Route path='/user/:userId?' element={<Home />} />
                     <Route path='/post/:postId' element={<Post/>} />
                     <Route path='/login' element={<Login />} />
 
