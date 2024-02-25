@@ -20,6 +20,13 @@
         justify-content: space-between;
         width: -webkit-fill-available;
 
+        .posts-filter-input {
+            border: none;
+            outline: none;
+        }
+        .posts-filter-submit {
+            border: none;
+        }
         .header-nav-item {
 
             padding: 0.5rem;
